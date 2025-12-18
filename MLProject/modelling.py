@@ -6,6 +6,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import mlflow
 import mlflow.sklearn
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+MLRUNS_DIR = BASE_DIR / "mlruns"
+
+mlflow.set_tracking_uri(f"file://{MLRUNS_DIR}")
+mlflow.set_experiment("IMDB_Modelling_Experiment")
+
 
 # Load data
 df = pd.read_csv("dataset_preprocessing/imbd_preprocessed.csv")
