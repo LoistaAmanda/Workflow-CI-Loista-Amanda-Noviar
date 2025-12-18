@@ -10,10 +10,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v4
+    - name: Setup Miniconda
+      uses: conda-incubator/setup-miniconda@v3
       with:
-        python-version: "3.12"
+        auto-update-conda: true
+        python-version: 3.12
+        auto-activate-base: true
 
     - name: Install MLflow
       run: |
@@ -23,12 +25,12 @@ jobs:
       run: |
         echo "MLFLOW_TRACKING_URI=file://$GITHUB_WORKSPACE/mlruns" >> $GITHUB_ENV
 
-    - name: Run MLflow Project (Conda)
+    - name: Run MLflow Project
       run: |
         cd MLProject
         mlflow run . --env-manager=conda
 
-    - name: Upload MLflow Artifacts to GitHub
+    - name: Upload MLflow Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: mlflow-artifacts
