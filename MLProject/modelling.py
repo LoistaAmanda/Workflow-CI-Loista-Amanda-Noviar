@@ -31,12 +31,15 @@ pipeline = Pipeline([
 ])
 
 with mlflow.start_run():
+
     pipeline.fit(X_train, y_train)
-    preds = pipeline.predict(X_test)
+    y_pred = pipeline.predict(X_test)
 
-    acc = accuracy_score(y_test, preds)
-    mlflow.log_metric("accuracy", acc)
+    mlflow.log_metric("accuracy", accuracy_score(y_test, y_pred))
 
-    mlflow.sklearn.log_model(pipeline, artifact_path="model")
+    mlflow.sklearn.log_model(
+        pipeline,
+        artifact_path="model"
+    )
 
 print("Training CI selesai")
