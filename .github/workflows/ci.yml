@@ -1,33 +1,29 @@
-name: MLflow CI Training
+name: MLflow CI
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   train:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          pip install mlflow==2.19.0
+    - name: Install MLflow
+      run: |
+        pip install mlflow
 
-      - name: Run MLflow Project
-        run: |
-          cd MLProject
-          mlflow run . --env-manager=local
+    - name: Set MLflow Tracking URI
+      run: |
+        echo "MLFLOW_TRACKING_URI=file://$GITHUB_WORKSPACE/mlruns" >> $GITHUB_ENV
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: mlflow-artifacts
-          path: MLProject/mlruns
+    - name: Run MLflow Project
+      run: |
+        cd MLProject
+        mlflow run . --env-manager=conda

@@ -1,8 +1,6 @@
 name: imdb-modelling
 
-python_env:
-  python: "3.12"
-  requirements: requirements.txt
+conda_env: conda.yaml
 
 entry_points:
   main:

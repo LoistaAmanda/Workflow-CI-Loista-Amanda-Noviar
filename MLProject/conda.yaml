@@ -1,4 +1,4 @@
-name: imbd-env
+name: imbd-mlflow-env
 
 channels:
 - conda-forge
@@ -13,4 +13,5 @@ dependencies:
   - psutil==7.1.0
   - scikit-learn==1.6.1
   - scipy==1.16.3
+  - seaborn
 name: mlflow-env
