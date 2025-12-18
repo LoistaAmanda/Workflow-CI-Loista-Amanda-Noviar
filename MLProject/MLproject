@@ -1,6 +1,10 @@
-name: imbd-text-classification
+name: imdb-modelling
 
-conda_env: conda.yaml
+conda_env: null
+
+python_env:
+  python: "3.12"
+  requirements: requirements.txt
 
 entry_points:
   main:
