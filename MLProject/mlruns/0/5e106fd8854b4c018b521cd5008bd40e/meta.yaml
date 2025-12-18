@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/tugas%20kulyah/Semester%205/ASAH/Eksperimen_SML_Loista-Amanda-Noviar/Workflow-CI/MLProject/mlruns/0/5e106fd8854b4c018b521cd5008bd40e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5e106fd8854b4c018b521cd5008bd40e
+run_name: bittersweet-cow-730
+run_uuid: 5e106fd8854b4c018b521cd5008bd40e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766056053760
+status: 1
+tags: []
+user_id: lulua

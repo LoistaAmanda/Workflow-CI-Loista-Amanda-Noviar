@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/tugas%20kulyah/Semester%205/ASAH/Eksperimen_SML_Loista-Amanda-Noviar/Workflow-CI/MLProject/mlruns/0/57619e3dfed64fa4b57dcfad0054af45/artifacts
+end_time: 1766054526513
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57619e3dfed64fa4b57dcfad0054af45
+run_name: wise-foal-47
+run_uuid: 57619e3dfed64fa4b57dcfad0054af45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766054481639
+status: 3
+tags: []
+user_id: lulua

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/tugas%20kulyah/Semester%205/ASAH/Eksperimen_SML_Loista-Amanda-Noviar/Workflow-CI/MLProject/mlruns/0/69dcfe645b4b48ef9a64f321e4c93950/artifacts
+end_time: 1766056501499
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 69dcfe645b4b48ef9a64f321e4c93950
+run_name: hilarious-goose-848
+run_uuid: 69dcfe645b4b48ef9a64f321e4c93950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766056461288
+status: 3
+tags: []
+user_id: lulua
