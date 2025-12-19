@@ -36,7 +36,7 @@ jobs:
     - name: Run mlflow project
       run: |
         cd MLProject
-        mlflow run . --env-manager=conda
+        mlflow run . --env-manager=local
 
     - name: Upload MLflow Artifacts
       uses: actions/upload-artifact@v4
