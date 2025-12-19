@@ -1,0 +1,28 @@
+artifact_path: file:///C:/tugas%20kulyah/Semester%205/ASAH/Eksperimen_SML_Loista-Amanda-Noviar/Workflow-CI/MLProject/mlruns/0/models/m-7ca2f0ae281349d3a681cca99ce412fe/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-7ca2f0ae281349d3a681cca99ce412fe
+model_size_bytes: 304045
+model_uuid: m-7ca2f0ae281349d3a681cca99ce412fe
+prompts: null
+run_id: 64f156599df74857817e8c506124ef6a
+signature:
+  inputs: '[{"type": "string", "name": "clean_text", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-12-19 00:08:07.027346'

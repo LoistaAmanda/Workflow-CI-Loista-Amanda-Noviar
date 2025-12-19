@@ -1,0 +1,10 @@
+artifact_location: file:///C:/tugas%20kulyah/Semester%205/ASAH/Eksperimen_SML_Loista-Amanda-Noviar/Workflow-CI/MLProject/mlruns/0/models/m-7ca2f0ae281349d3a681cca99ce412fe/artifacts
+creation_timestamp: 1766102886807
+experiment_id: '0'
+last_updated_timestamp: 1766102900134
+model_id: m-7ca2f0ae281349d3a681cca99ce412fe
+model_type: null
+name: model
+source_run_id: 64f156599df74857817e8c506124ef6a
+status: 2
+status_message: null
